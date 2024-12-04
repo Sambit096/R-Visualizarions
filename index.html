@@ -3,14 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Visualizations Project</title>
+    <title>R Visualizations</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        /* Inline CSS for simplicity */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 1em;
+            text-align: center;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Visualizations</h1>
-    <p>Explore the different visualizations below:</p>
-    <ul>
-        <li><a href="stock_volume_vs_price_movement.html">Stock Volume vs. Price Movement</a></li>
-        <li><a href="historical_stock_price_trends.html">Historical Stock Price Trends</a></li>
-    </ul>
+    <div class="container">
+        <h1>Welcome to R Visualizations</h1>
+        <p>Explore our interactive visualizations on stock trends and market activity. Click on the buttons below to view each visualization.</p>
+        <div class="button-container">
+            <a href="historical_stock_price_trends.html" class="button">Historical Stock Price Trends</a>
+            <a href="stock_volume_vs_price_movement.html" class="button">Stock Volume vs Price Movement</a>
+        </div>
+    </div>
 </body>
 </html>
